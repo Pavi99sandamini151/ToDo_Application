@@ -1,15 +1,19 @@
 import React from 'react';
+// @ts-ignore
+import PropTypes from "prop-types;"
 
-
-function Greeter(props: { first: string | number | boolean | React.ReactElement<any, string | React.JSXElementConstructor<any>> | React.ReactFragment | React.ReactPortal | null | undefined; }) {
-
+// @ts-ignore
+function Greeter(props) {
     return (
         <>
 
-            <h1>Greeter {props.first}</h1>
+            <h1>Greeter, {props.name}</h1>
 
         </>
     );
 }
 
+Greeter.propTypes = {
+    name: PropTypes.string.isRequired,
+};
 export default Greeter;

@@ -5,9 +5,10 @@ import Greeter from "./components/Greet";
 
 
 function App() {
+
     return (
         <div className="App">
-            <Greeter first="Pavi"/>
+            <ProjectsPage/>
         </div>
     );
 }
